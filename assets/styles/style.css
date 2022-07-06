@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --primary-color: rgb(123, 40, 172);
+    --primary-color-darker: rgb(76, 24, 105);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 500px;
+    background-color: #fff;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.info-imc,
+.info-resultado {
+    display: inline-block;
+}
+
+.info-resultado {
+    float: right;
+}
+
+.info-imc p, .info-resultado p {
+    margin: 8px 0;
+}
+
+.clear-all{
+    clear: both;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;;
+}
+
+form input, form button {
+    height: 50px;
+    font-size: 24px;
+    padding-left: 15px;
+}
+
+form input:focus{
+    border: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+form button:hover, form button:active {
+    background-color: var(--primary-color-darker);
+}
+
+.paragrafo-resultado, .error {
+    background-color: rgb(178, 236, 188);
+    padding: 18px;
+}
+
+.error {
+    background-color: rgb(236, 178, 178);
+}
